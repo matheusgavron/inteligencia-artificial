@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub de Estudos - Aula de Genética</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Ícones Phosphor Icons para diferenciação visual -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="ph ph-books"></i>
+      <span>StudyHub</span>
+    </div>
+    <div class="user-profile">
+      <span>Olá, Vestibulando!</span>
+      <div class="avatar">V</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Cabeçalho do Tema -->
+    <section class="topic-header">
+      <div class="topic-info">
+        <span class="badge">Biologia</span>
+        <h1>Aula de Genética: Primeiras Leis e Hereditariedade</h1>
+        <p>Hub centralizado com todos os materiais de apoio para revisão rápida.</p>
+      </div>
+      <div class="progress-box">
+        <label for="progress-bar">Conclusão do Tema:</label>
+        <div class="bar-container">
+          <div class="bar-fill" id="progress-bar" style="width: 50%;"></div>
+        </div>
+        <span id="progress-text">2 de 4 materiais revisados</span>
+      </div>
+    </section>
+
+    <!-- Filtros de Formato -->
+    <section class="filters-section">
+      <p class="filter-label">Filtrar por tipo:</p>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Todos (4)</button>
+        <button class="filter-btn" data-filter="pdf"><i class="ph ph-file-pdf"></i> PDFs</button>
+        <button class="filter-btn" data-filter="video"><i class="ph ph-youtube-logo"></i> Vídeos</button>
+        <button class="filter-btn" data-filter="image"><i class="ph ph-image"></i> Fotos</button>
+        <button class="filter-btn" data-filter="note"><i class="ph ph-note-pencil"></i> Anotações</button>
+      </div>
+    </section>
+
+    <!-- Grid de Materiais -->
+    <section class="materials-grid" id="materials-grid">
+      
+      <!-- Card PDF -->
+      <article class="card pdf" data-category="pdf">
+        <div class="card-header">
+          <span class="tag tag-pdf"><i class="ph ph-file-pdf"></i> PDF de Aula</span>
+          <input type="checkbox" class="status-check" aria-label="Marcar como concluído">
+        </div>
+        <h3>Apostila: Primeira Lei de Mendel</h3>
+        <p>Material teórico detalhado com exercícios resolvidos do Enem e Fuvest.</p>
+        <div class="card-footer">
+          <span>Tamanho: 2.4 MB</span>
+          <button class="btn-action">Abrir PDF</button>
+        </div>
+      </article>
+
+      <!-- Card Vídeo -->
+      <article class="card video" data-category="video">
+        <div class="card-header">
+          <span class="tag tag-video"><i class="ph ph-youtube-logo"></i> Vídeo YouTube</span>
+          <input type="checkbox" class="status-check" checked aria-label="Marcar como concluído">
+        </div>
+        <h3>Resumo Visual: Cruzamentos e Heredogramas</h3>
+        <p>Videoaula explicativa de 15 minutos com resolução passo a passo.</p>
+        <div class="card-footer">
+          <span>Duração: 15 min</span>
+          <button class="btn-action">Assistir</button>
+        </div>
+      </article>
+
+      <!-- Card Foto da Lousa -->
+      <article class="card image" data-category="image">
+        <div class="card-header">
+          <span class="tag tag-image"><i class="ph ph-image"></i> Foto da Lousa</span>
+          <input type="checkbox" class="status-check" aria-label="Marcar como concluído">
+        </div>
+        <h3>Quadro Comparativo: Genótipo vs Fenótipo</h3>
+        <p>Foto em alta resolução com o esquema resumido do professor na aula.</p>
+        <div class="card-footer">
+          <span>Capturado em: 12/Out</span>
+          <button class="btn-action">Ver Foto</button>
+        </div>
+      </article>
+
+      <!-- Card Anotação Pessoal -->
+      <article class="card note" data-category="note">
+        <div class="card-header">
+          <span class="tag tag-note"><i class="ph ph-note-pencil"></i> Anotação Pessoal</span>
+          <input type="checkbox" class="status-check" checked aria-label="Marcar como concluído">
+        </div>
+        <h3>Minhas Dúvidas & Pegadinhas do Enem</h3>
+        <p>Lembretes pessoais sobre probabilidade em genotipos heterozigotos.</p>
+        <div class="card-footer">
+          <span>Editado recentemente</span>
+          <button class="btn-action">Editar</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
